@@ -1,0 +1,71 @@
+<mat-tab-group>
+  <mat-tab label="user">
+    <form [formGroup]="rForm" (ngSubmit)="edit(rForm)">
+      <div class="block_register">
+        <div class="example-container">
+          Редактирование данных
+        </div>
+
+        <div class="example-container">
+          <mat-form-field>
+            <textarea matInput type="text" placeholder="First name" formControlName="first_name" required></textarea>
+          </mat-form-field>
+        </div>
+
+        <div class="example-container">
+          <mat-form-field>
+            <textarea matInput type="text" placeholder="Last name" formControlName="last_name" required></textarea>
+          </mat-form-field>
+        </div>
+        <mat-form-field>
+          <mat-select placeholder="Select" formControlName="is_author" (change)="status(rForm)" required >
+            <mat-option value="true">Автор</mat-option>
+            <mat-option value="false" selected >Игрок</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div id="about" *ngIf="is_author">
+          <mat-form-field>
+         <textarea matInput placeholder="About" matTextareaAutosize matAutosizeMinRows="2"
+                   matAutosizeMaxRows="5" formControlName="about" type="text"></textarea>
+          </mat-form-field>
+        </div>
+        <div *ngIf="rForm.valid" style="text-align: center">
+          <button type="submit" mat-raised-button>Edit</button>
+        </div>
+      </div>
+    </form>
+  </mat-tab>
+  <mat-tab label="password">
+    <form [formGroup]="pForm"  (ngSubmit)="edit_password(pForm)">
+      <div class="block_register">
+        <div class="example-container">
+          Редактирование данных
+        </div>
+
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="old password" [type]="hide ? 'password' : 'text'" formControlName="old_password" required>
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+        </div>
+
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="new password" [type]="hide2 ? 'password' : 'text'" formControlName="new_password" required>
+            <mat-icon matSuffix (click)="hide2 = !hide2">{{hide2 ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="new password again" [type]="hide3 ? 'password' : 'text'" formControlName="new_password_control" required>
+            <mat-icon matSuffix (click)="hide3 = !hide3">{{hide3 ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+        </div>
+        <div *ngIf="pForm.valid" style="text-align: center">
+          <button type="submit" mat-raised-button>Edit</button>
+        </div>
+      </div>
+    </form>
+  </mat-tab>
+</mat-tab-group>

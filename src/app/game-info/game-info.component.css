@@ -1,0 +1,21 @@
+.photo {
+  display: inline-block;
+  float: bottom;
+  width: 100%;
+  text-align: center; }
+
+.photo > img {
+  max-width: 640px;
+  max-height: 320px; }
+
+.block2 {
+  background-color: #fff;
+  display: block; }
+
+.block2 > div {
+  text-align: center; }
+
+.anotation {
+  padding: 10px; }
+
+/*# sourceMappingURL=game-info.component.css.map */

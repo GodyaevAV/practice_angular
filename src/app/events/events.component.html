@@ -1,0 +1,37 @@
+<div class="block">
+  <div class="navigate_bar">
+    <ul>
+      <li (click)="display_menu()">
+        <mat-icon>list</mat-icon>
+      </li>
+      <li>
+        Balance: {{balance}}₽
+      </li>
+
+      <li (click)="logout()">
+        Выход
+      </li>
+    </ul>
+  </div>
+  <div class="menu" id="menu" [@myMenuAnimation]="state">
+    <ul>
+      <li routerLink="/edit">
+        Edit
+      </li>
+      <li routerLink="/games">
+        Games
+      </li>
+      <li routerLink="/my-games">
+        My Games
+      </li>
+      <li routerLink="/ordering">
+        Офромить заказ
+      </li>
+    </ul>
+
+  </div>
+  <div class="content" id = "content" [@myContentAnimation]="state" (scroll)="set_none_menu()">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

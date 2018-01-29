@@ -1,0 +1,52 @@
+$top_margin: 15%;
+.photo{
+  display: inline-block;
+  float: bottom;
+  width: 100%;
+  text-align: center;
+  //position: absolute;
+  //left: 10%;
+  //top: $top_margin;
+  //width: 40%;
+  //height: 40%;
+  //background-color: black;
+}
+.photo > img {
+  max-width: 640px;
+  max-height: 320px;
+}
+//.some{
+//  display: inline-block;
+//  position: absolute;
+//  width: 30%;
+//  height: 10%;
+//  background-color: aqua;
+//  top: $top_margin;
+//  right: 5%;
+//}
+//.name{
+//  position: absolute;
+//  top: 2%;
+//  width: 70%;
+//  left: 15%;
+//  text-align: center;
+//  height: auto;
+//  background-color: burlywood;
+//}
+//.anotation{
+//  position: absolute;
+//  width: 100%;
+//  height: 40%;
+//  bottom: 0;
+//  background-color: antiquewhite;
+//}
+.block2{
+  background-color: #fff;
+  display: block;
+}
+.block2 > div {
+  text-align: center;
+}
+.anotation {
+  padding: 10px;
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kBAAmB;EACjB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;;AAGxB,sBAAuB;EACrB,KAAK,EAAE,IAAI",
+"sources": ["edit.component.scss"],
+"names": [],
+"file": "edit.component.css"
+}

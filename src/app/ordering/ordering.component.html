@@ -1,0 +1,11 @@
+<p>
+  ordering works!
+</p>
+<form>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker"  placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <input type="button" (click)="display($event)" value="press">
+  </mat-form-field>
+</form>

@@ -1,0 +1,40 @@
+//$example-card-height: 400px;
+//.example-card {
+//  width: 200px;
+//  height: $example-card-height;
+//  margin: 5px;
+//  display: inline-block;
+//  vertical-align: top;
+//  text-align: center;
+//}
+//mat-card-actions{
+//  position: absolute;
+//  bottom: 20px;
+//  text-align: center;
+//}
+//.content{
+//  text-align: center;
+//  vertical-align: middle;
+//}
+//
+//.paginator{
+//  display: inline-block;
+//  text-align: center;
+//  width: 100% ;
+//  position: absolute;
+//  bottom: 0;
+//}
+//.paginator > div {
+//  display: inline-block;
+//  width: 10px;
+//  margin: 15px;
+//}
+
+p {
+  width: 200px;
+  background: lightgray;
+  margin: 100px auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+}

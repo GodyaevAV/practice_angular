@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,MAAM;EACJ,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,MAAM;EACb,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;;AAQpB,YAAa;EACX,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,KAAK;;AA2BnB,OAAO;EACL,gBAAgB,EAAE,IAAI;EACtB,OAAO,EAAE,KAAK;;AAEhB,aAAc;EACZ,UAAU,EAAE,MAAM;;AAEpB,UAAW;EACT,OAAO,EAAE,IAAI",
+"sources": ["game-info.component.scss"],
+"names": [],
+"file": "game-info.component.css"
+}

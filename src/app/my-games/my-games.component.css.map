@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAgCA,CAAE;EACA,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,SAAS;EACrB,MAAM,EAAE,UAAU;EAClB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,KAAK",
+"sources": ["my-games.component.scss"],
+"names": [],
+"file": "my-games.component.css"
+}

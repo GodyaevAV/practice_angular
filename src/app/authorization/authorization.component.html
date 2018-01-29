@@ -1,0 +1,40 @@
+<mat-progress-bar *ngIf="!progress_bar_status" mode="indeterminate"></mat-progress-bar>
+<form [formGroup]="aForm" *ngIf="form_active_flag" (ngSubmit)="auth(aForm)">
+  <div class="block_register">
+    <div class="example-container">
+      <mat-form-field>
+        <textarea matInput placeholder="email" type="email" formControlName="email" required></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+      </mat-form-field>
+    </div>
+    <div *ngIf="aForm.valid" style="text-align: center">
+      <button type="submit" mat-raised-button>Войти</button>
+    </div>
+  </div>
+</form>
+<form [formGroup]="rForm" *ngIf="!form_active_flag" (ngSubmit)="recovery_user_password(rForm)">
+  <div class="block_register">
+    <div class="example-container">
+      <mat-form-field>
+        <textarea matInput placeholder="email" type="email" formControlName="email" required></textarea>
+      </mat-form-field>
+    </div>
+    <div *ngIf="rForm.valid" style="text-align: center">
+      <button type="submit" mat-raised-button>Восстановить</button>
+    </div>
+  </div>
+</form>
+<div class="block_btn">
+  <div class="btn">
+    <button type="button" mat-raised-button routerLink="/registration">Регистрация</button>
+  </div>
+  <div class="btn">
+    <button type="button" mat-raised-button (click)="form_active_flag = !form_active_flag">Восстановление пароля</button>
+  </div>
+</div>
